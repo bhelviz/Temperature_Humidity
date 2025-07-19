@@ -5,7 +5,7 @@
 #define DHTTYPE DHT11      // Change to DHT22 if using that sensor
 
 const char* ssid     = "SRD";
-const char* password = "5Rd@123456"; // Drs@12345
+const char* password = "********"; // 
 
 const char* host = "hpvp.bhel.com"; // only google.com not https://google.com
 
@@ -79,7 +79,7 @@ void loop() {
 
   // We now create a URI for the request
   String url = "/wsNodeMCU.php";
-  url += "?api_key=c1ef41a0";
+  url += "?api_key=******";
   url += "&tf=" + String(tempF,2);
   url += "&tc=" + String(temperature,2);
   url += "&rh=" + String(humidity,2);
